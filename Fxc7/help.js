@@ -8,6 +8,9 @@ ${instagram}
 \`\`\`SUBSCRIBE😁\`\`\`
 ${yt}
 
+\`\`\`GROUP OFFICIAL\`\`\`
+https://chat.whatsapp.com/GHC5djoQJrcGBJFwYQuQoB
+
 
 \`\`\`HARAP BACA NOTE DIBAWAH SEBELUM\`\`\`
 \`\`\`MENGGUNAKAN BOT\`\`\`
@@ -50,7 +53,7 @@ ${yt}
 ͏͏͏͏͏͏͏͏͏͏͏͏͏͏╭──────「 *MEDIA DOWNLOADER* 」
 ┴
 │➻ *${prefix}tiktokstalk username*
-│➻ *${prefix}igstalk mhmdfjralfarizi_*
+│➻ *${prefix}igstalk _farhan_xcode7*
 │➻ *${prefix}instavid link valid*
 │➻ *${prefix}instaimg link valid*
 │➻ *${prefix}instastory username*
@@ -71,18 +74,18 @@ ${yt}
 ┴
 │➻ *${prefix}quotemaker tx/wtrmk/tema*
 │➻ *${prefix}nulis nama/kelas/text*
-│➻ *${prefix}nulis Megumin/BOT*
+│➻ *${prefix}nulis Fxc7/Bot*
 │
-│➻ *${prefix}tahta 𝙼𝚎𝚐𝚞𝚖𝚒𝚗 𝙱𝙾𝚃*
-│➻ *${prefix}croman 𝙼𝚎𝚐𝚞𝚖𝚒𝚗 dan 𝙱𝙾𝚃*
-│➻ *${prefix}clove 𝙼𝚎𝚐𝚞𝚖𝚒𝚗 𝙱𝙾𝚃*
-│➻ *${prefix}cparty 𝙼𝚎𝚐𝚞𝚖𝚒𝚗 𝙱𝙾𝚃*
-│➻ *${prefix}csky 𝙼𝚎𝚐𝚞𝚖𝚒𝚗 𝙱𝙾𝚃*
+│➻ *${prefix}tahta FXC7*
+│➻ *${prefix}croman FXC7 dan BOT*
+│➻ *${prefix}clove FXC7*
+│➻ *${prefix}cparty FXC7*
+│➻ *${prefix}csky FXC7*
 │➻ *${prefix}tts id Haii*
-│➻ *${prefix}ttp 𝙼𝚎𝚐𝚞𝚖𝚒𝚗 𝙱𝙾𝚃 [ERROR]*
-│➻ *${prefix}cballon 𝙼𝚎𝚐𝚞𝚖𝚒𝚗 𝙱𝙾𝚃*
-│➻ *${prefix}cpaper 𝙼𝚎𝚐𝚞𝚖𝚒𝚗 𝙱𝙾𝚃*
-│➻ *${prefix}slide 𝙼𝚎𝚐𝚞𝚖𝚒𝚗 𝙱𝙾𝚃 BOT WA*
+│➻ *${prefix}ttp Fxc7 [ERROR]*
+│➻ *${prefix}cballon Fxc7*
+│➻ *${prefix}cpaper Fxc7*
+│➻ *${prefix}slide Fxc7 BOT WA*
 │
 │➻ *${prefix}stiker*
 │➻ *${prefix}gifstiker*
@@ -185,29 +188,29 @@ ${yt}
 
 ╭──────「 *OTHERS FUN & GAME* 」
 ┴
-│➻ *${prefix}jarak Bojonegoro/Surabaya*
+│➻ *${prefix}jarak Banyuwangi/Surabaya*
 │➻ *${prefix}translate en/Apa kabar?*
-│➻ *${prefix}pasangan Fajar/Debby*
-│➻ *${prefix}gantengcek Fajar*
-│➻ *${prefix}cantikcek Debby*
-│➻ *${prefix}artinama Fajar*
-│➻ *${prefix}persengay Arif*
-│➻ *${prefix}pbucin Fajar*
-│➻ *${prefix}bpfont Fajar*
-│➻ *${prefix}textstyle 𝙼𝚎𝚐𝚞𝚖𝚒𝚗 𝙱𝙾𝚃*
+│➻ *${prefix}pasangan Farhan/Iriene*
+│➻ *${prefix}gantengcek Farhan*
+│➻ *${prefix}cantikcek Iriene*
+│➻ *${prefix}artinama Farhan*
+│➻ *${prefix}persengay Topan*
+│➻ *${prefix}pbucin Farhan*
+│➻ *${prefix}bpfont Farhan*
+│➻ *${prefix}textstyle FXC7*
 │➻ *${prefix}jadwaltv antv*
 │➻ *${prefix}lirik melukis senja*
 │➻ *${prefix}chord Melukis senja*
 │➻ *${prefix}wiki Adolf Hitler*
 │➻ *${prefix}brainly pertanyaan*
 │➻ *${prefix}resepmasakan rawon*
-│➻ *${prefix}map Bojonegoro*
+│➻ *${prefix}map Banyuwangi*
 │➻ *${prefix}film Fast and Farious*
 │➻ *${prefix}pinterest gambar kucing*
-│➻ *${prefix}infocuaca Bojonegoro*
-│➻ *${prefix}jamdunia Bojonegoro*
+│➻ *${prefix}infocuaca Banyuwangi*
+│➻ *${prefix}jamdunia Banyuwangi*
 │➻ *${prefix}mimpi Ular*
-│➻ *${prefix}infoalamat jalan Bojonegoro*
+│➻ *${prefix}infoalamat jalan Banyuwangi*
 │➻ *${prefix}playstore WhatsApp*
 ┬
 ╰───────────────────────────
@@ -236,7 +239,7 @@ ${yt}
 
 ╭──────「 *OTHERS FUN & GAME* 」
 ┴
-│➻ *${prefix}jadwalsholat Bojonegoro*
+│➻ *${prefix}jadwalsholat Banyuwangi*
 │➻ *${prefix}quran*
 │➻ *${prefix}quransurah 1*
 ┬
@@ -309,11 +312,11 @@ ${yt}
 
 ╭─────「 *SUPPORT ${name}* 」
 ┴
-│➲ *Fajar Alfarizi*
-│➲ *Debby*
-│➲ *Dennis*
-│➲ *Miko*
-│➲ *D N S BOT*
+│➲ *O BOT*
+│➲ *M. HADI FIRMANSYA*
+│➲ *DELIA AULIA*
+│➲ *KEVIN DAVID*
+│➲ *MY TEAM FXC7 BOT*
 │➲ *CONTENT CREATOR BOT WHATSAPP*
 ┬
 ╰────────────────────────`
@@ -337,8 +340,8 @@ const donasi = (name) => {
 	return `       
 ╭─────「 *DONASI SEIKHLASNYA* 」
 ┴
-│√ *PULSA: 081333782061*
-│√ *DANA : 081333782061*
+│√ *PULSA: 08311800241*
+│√ *OVO : 08311800241*
 ┬
 ╰──────「 *BY ${name}* 」
 
