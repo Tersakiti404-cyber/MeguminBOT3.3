@@ -37,13 +37,13 @@ const vcard = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n' 
             + 'FN: Fajar Alfarizi\n' 
             + 'ORG: OWNER 𝙼𝚎𝚐𝚞𝚖𝚒𝚗 𝙱𝙾𝚃;\n' 
-            + 'TEL;type=CELL;type=VOICE;waid=6281333782061:+62 813-3378-2061\n' 
+            + 'TEL;type=CELL;type=VOICE;waid=6281333782061:+6281333782061\n' 
             + 'END:VCARD' 
 blocked = []   
-prefix = '!'
+prefix = '#'
 limitawal = 100
 memberlimit = 5
-cr = '*𝙼𝚎𝚐𝚞𝚖𝚒𝚗 𝙱𝙾𝚃*'
+cr = '*𝙼𝚎𝚐𝚞𝚖𝚒𝚗 𝙱𝙾𝚃 WhatsApp*'
 /*************************************/
 mess = {
 				wait: '*「 WAIT 」 𝙼𝚎𝚐𝚞𝚖𝚒𝚗 𝙱𝙾𝚃 Sedang Dalam proses*'
@@ -529,14 +529,14 @@ client.on('group-participants-update', async (anu) => {
 				case 'hekerbucin':
 				if (!isRegistered) return reply(ind.noregis())
                 if (isLimit(sender)) return reply(ind.limitend(pusname))
-				anu = await fetchJson(`http://itsmeikygans.my.id/bacotanhacker?apikey=${apikey}`, {method: 'get'})
+				anu = await fetchJson(`http://itsmeikygans.my.id/bacotanhacker?apikey=${itsmeiky633}`, {method: 'get'})
 				reply (anu.result)
 				await limitAdd(sender) 
 				break 
 			    case 'katailham':
 				if (!isRegistered) return reply(ind.noregis())
                 if (isLimit(sender)) return reply(ind.limitend(pusname))
-				anu = await fetchJson(`http://itsmeikygans.my.id/bacotanilham?apikey=${apikey}`, {method: 'get'})
+				anu = await fetchJson(`http://itsmeikygans.my.id/bacotanilham?apikey=${itsmeiky633}`, {method: 'get'})
 				kata = anu.result
 				client.sendMessage(from, kata, text, {quoted: mek})
 				await limitAdd(sender)
@@ -545,7 +545,7 @@ client.on('group-participants-update', async (anu) => {
                 if (!isGroup) return reply(ind.groupo())
                 if (!isRegistered) return reply(ind.noregis())
 				if (isLimit(sender)) return reply(ind.limitend(pusname))
-                data = await fetchJson(`https://api.itsmeikyxsec404.xyz/playmp3?apikey=${apikey}&query=${body.slice(6)}`, {method: 'get'})
+                data = await fetchJson(`https://api.itsmeikyxsec404.xyz/playmp3?apikey=${itsmeiky633}&query=${body.slice(6)}`, {method: 'get'})
                if (data.error) return reply(data.error)
                  infomp3 = `「 *PLAY* 」\n*Judul* : ${data.result.title}\n*Duration* : ${data.result.duration}\n*Filesize* : ${data.result.size}\n\n*Tunggu 𝙼𝚎𝚐𝚞𝚖𝚒𝚗 𝙱𝙾𝚃 Sedang mengirim audio nya jangan spam*`
                 bufferddd = await getBuffer(data.result.image)
@@ -569,7 +569,7 @@ client.on('group-participants-update', async (anu) => {
                     if (!isRegistered) return reply(ind.noregis())
 				    if (isLimit(sender)) return reply(ind.limitend(pusname))
 					gatauda = body.slice(8)
-					anu = await fetchJson(`http://api.itsmeikyxsec404.xyz/fakta?apikey=${apikey}`, {method: 'get'})
+					anu = await fetchJson(`http://api.itsmeikyxsec404.xyz/fakta?apikey=${itsmeiky633}`, {method: 'get'})
 					reply(anu.result)
 					break
 					case 'asupan':
@@ -577,7 +577,7 @@ client.on('group-participants-update', async (anu) => {
                 if (!isRegistered) return reply(ind.noregis())
                 if (isLimit(sender)) return reply(ind.limitend(pusname))
                 reply(mess.wait)
-                anu = await fetchJson(`http://itsmeikygans.my.id/asupan?apikey=${apikey}`)
+                anu = await fetchJson(`http://itsmeikygans.my.id/asupan?apikey=${itsmeiky633}`)
                 asup = await getBuffer(anu.result)
                 client.sendMessage(from, asup, video, {mimetype: 'video/mp4', filename: `asupan_bangsa.mp4`, quoted: mek, caption: 'Asupannya Tuan:v'})
                 await limitAdd(sender) 
@@ -658,24 +658,24 @@ client.on('group-participants-update', async (anu) => {
 					break
 				//tobz 
 				case 'lirik':
-				anu = await fetchJson(`https://tobz-api.herokuapp.com/api/lirik?q=akad&apikey=${apikey}`)
+				anu = await fetchJson(`https://tobz-api.herokuapp.com/api/lirik?q=akad&apikey=${BotWeA}`)
 				thum = await getBuffer(anu.result.thumb)
 				teks = `*「 LAGU DI TEMUKAN 」*\n\n*Judul* : ${anu.result.judul}\n*Album* : ${anu.result.album}\n*public in* : ${anu.result.dipublikasi}\n*Lyrics* : ${anu.result.lirik}`
 				client.sendMessage(from, thum, image, { quoted : mek, caption: teks })
 				break
 				case 'ttp':
-				anu = await fetchJson(`https://tobz-api.herokuapp.com/api/ttp?text=${body.slice(5)}&apikey=${apikey}`)
+				anu = await fetchJson(`https://tobz-api.herokuapp.com/api/ttp?text=${body.slice(5)}&apikey=${BotWeA}`)
 				res = await getBase64(anu.base64)
 				client.sendMessage(from, res, sticker, {quoted:mek})
 				break
                 case 'chord':
-                anu = await fetchJson(`https://tobz-api.herokuapp.com/api/chord?q=${body.slice(7)}&apikey=${apikey}`)
+                anu = await fetchJson(`https://tobz-api.herokuapp.com/api/chord?q=${body.slice(7)}&apikey=${BotWeA}`)
                 client.sendMessage(from, anu.result, text, {quoted:mek})
                 break
 				case 'moddroid':
 				if (!isRegistered) return reply(ind.noregis())
 				if (isLimit(sender)) return reply(ind.limitend(pusname))
-			data = await fetchJson(`https://tobz-api.herokuapp.com/api/moddroid?q=${body.slice(10)}&apikey=${apikey}`)
+			data = await fetchJson(`https://tobz-api.herokuapp.com/api/moddroid?q=${body.slice(10)}&apikey=${BotWeA}`)
 			hepi = data.result[0] 
 			teks = `*Nama*: ${data.result[0].title}\n*publisher*: ${hepi.publisher}\n*mod info:* ${hepi.mod_info}\n*size*: ${hepi.size}\n*latest version*: ${hepi.latest_version}\n*genre*: ${hepi.genre}\n*link:* ${hepi.link}\n*download*: ${hepi.download}`
 			buffer = await getBuffer(hepi.image)
@@ -685,7 +685,7 @@ client.on('group-participants-update', async (anu) => {
 			case 'happymod':
 				if (!isRegistered) return reply(ind.noregis())
 				if (isLimit(sender)) return reply(ind.limitend(pusname))
-			data = await fetchJson(`https://tobz-api.herokuapp.com/api/happymod?q=${body.slice(10)}&apikey=${apikey}`)
+			data = await fetchJson(`https://tobz-api.herokuapp.com/api/happymod?q=${body.slice(10)}&apikey=${BotWeA}`)
 			hupo = data.result[0] 
 			teks = `*Nama*: ${data.result[0].title}\n*version*: ${hupo.version}\n*size:* ${hupo.size}\n*root*: ${hupo.root}\n*purchase*: ${hupo.price}\n*link*: ${hupo.link}\n*download*: ${hupo.download}`
 			buffer = await getBuffer(hupo.image)
@@ -696,7 +696,7 @@ client.on('group-participants-update', async (anu) => {
 				if (!isRegistered) return reply(ind.noregis())
 				if (isLimit(sender)) return reply(ind.limitend(pusname))
                client.updatePresence(from, Presence.composing) 
-                data = await fetchJson(`https://tobz-api.herokuapp.com/api/bitly?url=${args[0]}&apikey=${apikey}`)
+                data = await fetchJson(`https://tobz-api.herokuapp.com/api/bitly?url=${args[0]}&apikey=${BotWeA}`)
                 hasil = `link : ${args[0]}\n\nOutput : ${data.result}`
                 reply(hasil)
                 await limitAdd(sender)
@@ -706,7 +706,7 @@ client.on('group-participants-update', async (anu) => {
 				if (isLimit(sender)) return reply(ind.limitend(pusname))
 					ranp = getRandom('.gif')
 					rano = getRandom('.webp')
-					anu = await fetchJson('https://tobz-api.herokuapp.com/api/cry?apikey=${apikey}', {method: 'get'})
+					anu = await fetchJson('https://tobz-api.herokuapp.com/api/cry?apikey=${BotWeA}', {method: 'get'})
 					if (anu.error) return reply(anu.error)
 					exec(`wget ${anu.result} -O ${ranp} && ffmpeg -i ${ranp} -vcodec libwebp -filter:v fps=fps=15 -lossless 1 -loop 0 -preset default -an -vsync 0 -s 512:512 ${rano}`, (err) => {
 						fs.unlinkSync(ranp)
@@ -723,7 +723,7 @@ client.on('group-participants-update', async (anu) => {
 				if (!isNsfw) return reply(ind.nsfwoff())
 					ranp = getRandom('.gif')
 					rano = getRandom('.webp')
-					anu = await fetchJson('https://tobz-api.herokuapp.com/api/nsfwblowjob?apikey=${apikey}', {method: 'get'})
+					anu = await fetchJson('https://tobz-api.herokuapp.com/api/nsfwblowjob?apikey=${BotWeA}', {method: 'get'})
 					if (anu.error) return reply(anu.error)
 					exec(`wget ${anu.result} -O ${ranp} && ffmpeg -i ${ranp} -vcodec libwebp -filter:v fps=fps=15 -lossless 1 -loop 0 -preset default -an -vsync 0 -s 512:512 ${rano}`, (err) => {
 						fs.unlinkSync(ranp)
@@ -740,7 +740,7 @@ client.on('group-participants-update', async (anu) => {
 				if (!isNsfw) return reply(ind.nsfwoff())
 					ranp = getRandom('.gif')
 					rano = getRandom('.webp')
-					anu = await fetchJson('https://tobz-api.herokuapp.com/api/kiss?apikey=${apikey}', {method: 'get'})
+					anu = await fetchJson('https://tobz-api.herokuapp.com/api/kiss?apikey=${BotWeA}', {method: 'get'})
 					if (anu.error) return reply(anu.error)
 					exec(`wget ${anu.result} -O ${ranp} && ffmpeg -i ${ranp} -vcodec libwebp -filter:v fps=fps=15 -lossless 1 -loop 0 -preset default -an -vsync 0 -s 512:512 ${rano}`, (err) => {
 						fs.unlinkSync(ranp)
@@ -757,7 +757,7 @@ client.on('group-participants-update', async (anu) => {
 				if (!isNsfw) return reply(ind.nsfwoff())
 					ranp = getRandom('.gif')
 					rano = getRandom('.webp')
-					anu = await fetchJson('https://tobz-api.herokuapp.com/api/hug?apikey=${apikey}', {method: 'get'})
+					anu = await fetchJson('https://tobz-api.herokuapp.com/api/hug?apikey=${BotWeA}', {method: 'get'})
 					if (anu.error) return reply(anu.error)
 					exec(`wget ${anu.result} -O ${ranp} && ffmpeg -i ${ranp} -vcodec libwebp -filter:v fps=fps=15 -lossless 1 -loop 0 -preset default -an -vsync 0 -s 512:512 ${rano}`, (err) => {
 						fs.unlinkSync(ranp)
@@ -772,7 +772,7 @@ client.on('group-participants-update', async (anu) => {
 				if (!isRegistered) return reply(ind.noregis())
 				if (isLimit(sender)) return reply(ind.limitend(pusname))
 				    try {
-						res = await fetchJson(`https://tobz-api.herokuapp.com/api/husbu?apikey=${apikey}`)
+						res = await fetchJson(`https://tobz-api.herokuapp.com/api/husbu?apikey=${BotWeA}`)
 						buffer = await getBuffer(res.image)
 						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Ingat! Cintai husbumu'})
 					} catch (e) {
@@ -787,7 +787,7 @@ client.on('group-participants-update', async (anu) => {
 				if (!isNsfw) return reply(ind.nsfwoff())
 					gatauda = body.slice(8)
 					reply(ind.wait())
-					anu = await fetchJson(`https://tobz-api.herokuapp.com/api/randomanime?apikey=${apikey}`, {method: 'get'})
+					anu = await fetchJson(`https://tobz-api.herokuapp.com/api/randomanime?apikey=${BotWeA}`, {method: 'get'})
 					buffer = await getBuffer(anu.result)
 					client.sendMessage(from, buffer, image, {quoted: mek})
 					await limitAdd(sender)
@@ -795,7 +795,7 @@ client.on('group-participants-update', async (anu) => {
                case 'caklontong':
             if (!isRegistered) return reply(ind.noregis())
 				if (isLimit(sender)) return reply(ind.limitend(pusname))
-					anu = await fetchJson(`https://api.vhtear.com/funkuis&apikey=${apikey}`, {method: 'get'})
+					anu = await fetchJson(`https://api.vhtear.com/funkuis&apikey=${ANTIGRATISANCOK}`, {method: 'get'})
 					caklontong = `*${anu.result.soal}*`
 					setTimeout( () => {
 					client.sendMessage(from, '*➸ Jawaban :* '+anu.result.jawaban+ '\n\n• Penjelasan: *'+ anu.result.desk+'*', text, {quoted: mek}) // ur cods
@@ -839,7 +839,7 @@ client.on('group-participants-update', async (anu) => {
 				case 'family100':
            if (!isRegistered) return reply(ind.noregis())
 				if (isLimit(sender)) return reply(ind.limitend(pusname))
-					anu = await fetchJson(`https://api.vhtear.com/family100&apikey=${apikey}`, {method: 'get'})
+					anu = await fetchJson(`https://api.vhtear.com/family100&apikey=${ANTIGRATISANCOK}`, {method: 'get'})
 					family = `*${anu.result.soal}*`
 					setTimeout( () => {
 					client.sendMessage(from, '*➸ Jawaban :* '+anu.result.jawaban, text, {quoted: mek}) // ur cods
@@ -879,7 +879,7 @@ client.on('group-participants-update', async (anu) => {
 			if (isLimit(sender)) return reply(ind.limitend(pusname))
 					if (args.length < 1) return reply('*Textnya mana gan?*')
 					teks = `${body.slice(7)}`
-					atytyd = await getBuffer(`https://api.vhtear.com/slidingtext?text=${teks}&apikey=${apikey}`, {method: 'get'})
+					atytyd = await getBuffer(`https://api.vhtear.com/slidingtext?text=${teks}&apikey=${ANTIGRATISANCOK}`, {method: 'get'})
 					reply(mess.wait)
 					client.sendMessage(from, atytyd, video, {quoted: mek})
 					await limitAdd(sender) 
@@ -897,7 +897,7 @@ client.on('group-participants-update', async (anu) => {
 			if (isLimit(sender)) return reply(ind.limitend(pusname))
 					part = `${body.slice(7)}`
 					reply(mess.wait)
-					bufferu = await getBuffer(`https://api.vhtear.com/partytext?text=${part}&apikey=${apikey}`, {method: 'get'})
+					bufferu = await getBuffer(`https://api.vhtear.com/partytext?text=${part}&apikey=${ANTIGRATISANCOK}`, {method: 'get'})
 					client.sendMessage(from, bufferu, image, {caption: 'Nih kak', quoted: mek})
 					await limitAdd(sender) 
 					break 
@@ -908,7 +908,7 @@ client.on('group-participants-update', async (anu) => {
                     hm = `${body.slice(8)}`
                     text1 = hm.split("|")[0];
                     text2 = hm.split("|")[1];                    
-                    glitch = await getBuffer(`https://api.vhtear.com/glitchtext?text1=${text1}&text2=${text2}&apikey=${apikey}`, {method: 'get'})
+                    glitch = await getBuffer(`https://api.vhtear.com/glitchtext?text1=${text1}&text2=${text2}&apikey=${ANTIGRATISANCOK}`, {method: 'get'})
                     client.sendMessage(from, glitch, image, {quoted: mek, caption: 'nih gan'})
 			     	await limitAdd(sender) 
 			     	break 
@@ -919,7 +919,7 @@ client.on('group-participants-update', async (anu) => {
                      reply(mess.wait)
                      if (args.length < 1) return reply('Teksnya mana gan??')
                      if (args.length > 10) return reply('karakter minimal 10')
-                     buffer = await getBuffer(`https://api.vhtear.com/romancetext?text=${roman}&apikey=${apikey}`, {method: 'get'})
+                     buffer = await getBuffer(`https://api.vhtear.com/romancetext?text=${roman}&apikey=${ANTIGRATISANCOK}`, {method: 'get'})
                      client.sendMessage(from, buffer, image, {quoted: mek})
                   await limitAdd(sender) 
                   break 
@@ -929,7 +929,7 @@ client.on('group-participants-update', async (anu) => {
 					  if (args.length < 1) return reply('Teksnya mana gan??')
                      if (args.length > 10) return reply('karakter minimal 10')
 					 love = `${body.slice(6)}`
-					 buffer = await getBuffer(`https://api.vhtear.com/lovemessagetext?text=${love}&apikey=${apikey}`, {method: 'get'})
+					 buffer = await getBuffer(`https://api.vhtear.com/lovemessagetext?text=${love}&apikey=${ANTIGRATISANCOK}`, {method: 'get'})
 					 client.sendMessage(from, buffer, image, {quoted: mek})
 					 await limitAdd(sender)
 					 break 
@@ -1118,7 +1118,7 @@ client.on('group-participants-update', async (anu) => {
                     reply(mess.wait)
                      if (args.length < 1) return reply('Teksnya mana gan??')
                      if (args.length > 10) return reply('karakter minimal 10')
-                     buffer = await getBuffer(`https://api.vhtear.com/hartatahta?text=${tahta}&apikey=${apikey}`, {method: 'get'})
+                     buffer = await getBuffer(`https://api.vhtear.com/hartatahta?text=${tahta}&apikey=${ANTIGRATISANCOK}`, {method: 'get'})
                      client.sendMessage(from, buffer, image, {quoted: mek})
                   await limitAdd(sender) 
                   break  
@@ -1153,7 +1153,7 @@ client.on('group-participants-update', async (anu) => {
 					gbl1 = gh.split("|")[0];
 					gbl2 = gh.split("|")[1];
 					if (args.length < 1) return reply('Teksnya mana gan?')
-					buffer = await getBuffer(`https://api.vhtear.com/pornlogo?text1=${gbl1}&text2=${gbl2}&apikey=${apikey}`, {method: 'get'})
+					buffer = await getBuffer(`https://api.vhtear.com/pornlogo?text1=${gbl1}&text2=${gbl2}&apikey=${ANTIGRATISANCOK}`, {method: 'get'})
 					client.sendMessage(from, buffer, image, {quoted: mek})
 					await limitAdd(sender) 
 					break 
@@ -1164,7 +1164,7 @@ client.on('group-participants-update', async (anu) => {
 					love = body.slice(9)
 					if (love.length > 12) return reply('Teksnya kepanjangan, maksimal 9 karakter')
                     reply(mess.wait)
-					bufferxcz = await getBuffer(`https://api.vhtear.com/fire_maker?text=${love}&apikey=${apikey}`, {method: 'get'})
+					bufferxcz = await getBuffer(`https://api.vhtear.com/fire_maker?text=${love}&apikey=${ANTIGRATISANCOK}`, {method: 'get'})
 					client.sendMessage(from, bufferxcz, image, {quoted: mek, caption: ' '+love})
 					await limitAdd(sender)
 					break
@@ -1186,7 +1186,7 @@ client.on('group-participants-update', async (anu) => {
 		    case 'cersex':
            if (!isRegistered) return reply(ind.noregis())
 			if (isLimit(sender)) return reply(ind.limitend(pusname))
-                   anu = await fetchJson(`https://api.vhtear.com/cerita_sex&apikey=${apikey}`, {method: 'get'})
+                   anu = await fetchJson(`https://api.vhtear.com/cerita_sex&apikey=${ANTIGRATISANCOK}`, {method: 'get'})
                    if (anu.error) return reply(anu.error)
                    sex = await getBuffer(anu.result.image)
                    reply (mess.wait)
@@ -1366,7 +1366,7 @@ client.on('group-participants-update', async (anu) => {
                 case 'joox':
 				if (!isRegistered) return reply(ind.noregis())
 				if (isLimit(sender)) return reply(ind.limitend(pusname))
-                data = await fetchJson(`https://tobz-api.herokuapp.com/api/joox?q=${body.slice(6)}&apikey=${apikey}`, {method: 'get'})
+                data = await fetchJson(`https://tobz-api.herokuapp.com/api/joox?q=${body.slice(6)}&apikey=${BotWeA}`, {method: 'get'})
                if (data.error) return reply(data.error)
                  infomp3 = `*Lagu Ditemukan!!!*\nJudul : ${data.result.judul}\nAlbum : ${data.result.album}\nDipublikasi : ${data.result.dipublikasi}`
                 buffer = await getBuffer(data.result.thumb)
@@ -1596,7 +1596,7 @@ client.on('group-participants-update', async (anu) => {
 				    if (!isRegistered) return reply(ind.noregis())
 					if (isLimit(sender)) return reply(ind.limitend(pusname))
 						if (!isNsfw) return reply(' *FALSE* ')
-						res = await fetchJson(`https://tobz-api.herokuapp.com/api/randomloli?apikey=${apikey}`, {method: 'get'})
+						res = await fetchJson(`https://tobz-api.herokuapp.com/api/randomloli?apikey=${BotWeA}`, {method: 'get'})
 						buffer = await getBuffer(res.result)
 						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Jangan jadiin bahan buat comli om'})
 					} catch (e) {
@@ -1610,7 +1610,7 @@ client.on('group-participants-update', async (anu) => {
 				if (!isRegistered) return reply(ind.noregis())
 					if (isLimit(sender)) return reply(ind.limitend(pusname))
 						if (!isNsfw) return reply(' *FALSE* ')
-						res = await fetchJson(`https://tobz-api.herokuapp.com/api/nsfwblowjob?apikey=${apikey}`, {method: 'get'})
+						res = await fetchJson(`https://tobz-api.herokuapp.com/api/nsfwblowjob?apikey=${BotWeA}`, {method: 'get'})
 						buffer = await getBuffer(res.result)
 						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Jangan jadiin bahan buat comli om'})
 					} catch (e) {
@@ -1624,7 +1624,7 @@ client.on('group-participants-update', async (anu) => {
 				    if (!isRegistered) return reply(ind.noregis())
 					if (isLimit(sender)) return reply(ind.limitend(pusname))
 						if (!isNsfw) return reply(' *FALSE* ')
-						res = await fetchJson(`https://tobz-api.herokuapp.com/api/nsfwneko?apikey=${apikey}`, {method: 'get'})
+						res = await fetchJson(`https://tobz-api.herokuapp.com/api/nsfwneko?apikey=${BotWeA}`, {method: 'get'})
 						buffer = await getBuffer(res.result)
 						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'ni anjim'})
 					} catch (e) {
@@ -1638,7 +1638,7 @@ client.on('group-participants-update', async (anu) => {
 				    if (!isRegistered) return reply(ind.noregis())
 					if (isLimit(sender)) return reply(ind.limitend(pusname))
 						if (!isNsfw) return reply(' *FALSE* ')
-						res = await fetchJson(`https://tobz-api.herokuapp.com/api/nsfwtrap?apikey=${apikey}`, {method: 'get'})
+						res = await fetchJson(`https://tobz-api.herokuapp.com/api/nsfwtrap?apikey=${BotWeA}`, {method: 'get'})
 						buffer = await getBuffer(res.result)
 						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'ni anjim'})
 					} catch (e) {
@@ -1778,7 +1778,7 @@ client.on('group-participants-update', async (anu) => {
 				    if (!isRegistered) return reply(ind.noregis())
 					if (isLimit(sender)) return reply(ind.limitend(pusname))
 						if (!isNsfw) return reply(' *FALSE* ')
-						res = await fetchJson(`https://tobz-api.herokuapp.com/api/hentai?apikey=${apikey}`, {method: 'get'})
+						res = await fetchJson(`https://tobz-api.herokuapp.com/api/hentai?apikey=${BotWeA}`, {method: 'get'})
 						buffer = await getBuffer(res.result)
 						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'ni anjim'})
 					} catch (e) {
@@ -1793,7 +1793,7 @@ client.on('group-participants-update', async (anu) => {
                     if (!isRegistered) return reply(ind.noregis())
 				if (isLimit(sender)) return reply(ind.limitend(pusname))
 					gatauda = body.slice(6)
-					anu = await fetchJson(`https://tobz-api.herokuapp.com/api/nekonime?apikey=${apikey}`, {method: 'get'})
+					anu = await fetchJson(`https://tobz-api.herokuapp.com/api/nekonime?apikey=${BotWeA}`, {method: 'get'})
 					buffer = await getBuffer(anu.result)
 					client.sendMessage(from, buffer, image, {quoted: mek})
                     await limitAdd(sender)
@@ -1909,7 +1909,7 @@ client.on('group-participants-update', async (anu) => {
 				if (!isRegistered) return reply(ind.noregis())
 					if (isLimit(sender)) return reply(ind.limitend(pusname))
 					reply(mess.wait)
-					anu = await fetchJson(`https://api.vhtear.com/pinterest?query=kaneki&apikey=${apikey}`, {method: 'get'})
+					anu = await fetchJson(`https://api.vhtear.com/pinterest?query=kaneki&apikey=${ANTIGRATISANCOK}`, {method: 'get'})
 					var ka = JSON.parse(JSON.stringify(anu.result));
 					var ne =  ka[Math.floor(Math.random() * ka.length)];
 					ki = await getBuffer(ne)
@@ -2031,7 +2031,7 @@ client.on('group-participants-update', async (anu) => {
 					if (args.length < 1) return reply('Urlnya mana gan?')
 					if (!isUrl(args[0]) && !args[0].includes('vt')) return reply(mess.error.Iv)
 					reply(mess.wait)
-					anu = await fetchJson(`https://api.vhtear.com/tiktokdl?link=${args[0]}&apikey=${apikey}`, {method: 'get'})
+					anu = await fetchJson(`https://api.vhtear.com/tiktokdl?link=${args[0]}&apikey=${ANTIGRATISANCOK}`, {method: 'get'})
 					if (anu.error) return reply(anu.error)
 					buffer = await getBuffer(anu.result.video)
 					client.sendMessage(from, buffer, video, {quoted: mek})
