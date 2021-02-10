@@ -23,7 +23,7 @@ exports.lvlnoon = () => {
 }
 
 exports.noregis = () => {
-	return`*「 BELUM DAFTAR 」*\n\n*cara daftar ${prefix}daftar nama|umur* \n*contoh ${prefix}daftar Fajar|17*`
+	return`*「 BELUM DAFTAR 」*\n\n*cara daftar ${prefix}daftar nama|umur* \n*contoh ${prefix}daftar Fajar Alfarizi|17*`
 }
 
 exports.rediregis = () => {
@@ -326,16 +326,16 @@ exports.menu = (pushname, prefix, getLevelingLevel, getLevelingXp, sender, reqXp
 ❍【♡ۣۜۜ፝͜͜͡͡✿➣ *${prefix}wait* <send image>
 ❍ ╰━━━━━━━━━━━━━
 ╭──━─── ❀۝❀ ───━──╮
-          *𝙼𝚎𝚐𝚞𝚖𝚒𝚗 𝙱𝙾𝚃*
+              *𝙼𝚎𝚐𝚞𝚖𝚒𝚗 𝙱𝙾𝚃*
 ╰──━─── ❀۝❀ ───━──╯
 ┣━━⊱ *THANGKS TO* ⊰━━┫
 ┃
 ┣⊱ *Fajar Alfarizi* <dev>
 ┣⊱ *Debby* <partner>
 ┣⊱ *Resta Fvnky* <sc ori>
-┣⊱ *D N S BOT* <team>
+┣⊱ *D N S BOY* <team>
 ┃
-┃
+┃https://instagram.com/mhmdfjralfarizi_
 ┃
 ┃ 
 ┃
